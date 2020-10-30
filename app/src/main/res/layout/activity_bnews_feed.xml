@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/business_bg1"
+    android:layout_height="match_parent"
+    tools:context=".UI.BNewsFeed">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="@string/fossB"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/business_bg1"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cardLay"
+        android:layout_below="@id/appbar"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="10sp"
+            android:background="@drawable/cardbg"
+            android:layout_height="100sp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:background="@drawable/cardbg"
+                android:paddingRight="6sp"
+                android:paddingLeft="6sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/allura"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="@string/add_menu"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/alegreya_sc_bold_italic"
+                    android:drawableLeft="@drawable/addmenu"
+                    android:drawablePadding="12sp"
+                    android:drawableStart="@drawable/addmenu" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="10sp"
+            android:background="@drawable/cardbg"
+            android:layout_height="100sp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:background="@drawable/cardbg"
+                android:paddingRight="6sp"
+                android:paddingLeft="6sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/allura"
+                    android:paddingLeft="6sp"
+                    android:paddingRight="6sp"
+                    android:text="@string/orders"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/alegreya_sc_bold_italic"
+                    android:drawableLeft="@drawable/orders1"
+                    android:drawablePadding="12sp"
+                    android:drawableStart="@drawable/orders1" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/myMenu"
+        android:text="@string/my_menu"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:layout_below="@id/cardLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_below="@id/myMenu"
+        android:paddingTop="3sp"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="3sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+</RelativeLayout>

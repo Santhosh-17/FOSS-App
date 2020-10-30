@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFiles.confirmOrder">
+
+    <TextView
+        android:id="@+id/confirmOrderTitle"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="Confirm Order"
+        android:layout_above="@id/oConfirmButton"
+        android:layout_margin="36sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/oConfirmButton"
+        android:layout_toLeftOf="@id/cen3"
+        android:layout_centerVertical="true"
+        android:layout_margin="18sp"
+        android:background="@drawable/buttonbw"
+        android:text="Confirm"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="6sp"
+        android:paddingBottom="6sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/cen3"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/oCancelButton"
+        android:layout_toRightOf="@id/cen3"
+        android:layout_centerVertical="true"
+        android:layout_margin="18sp"
+        android:background="@drawable/buttonbw"
+        android:text="Cancel"
+        android:textColor="@android:color/holo_red_dark"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="6sp"
+        android:paddingBottom="6sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

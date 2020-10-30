@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popLayout"
+    android:background="@drawable/loginbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/fossBusinessButton"
+        android:text="@string/foss_business"
+        android:padding="10dp"
+        android:background="@drawable/button_bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/welcomeTextU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@id/fossBusinessButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:background="@android:color/white"
+        android:id="@+id/imageViewLogoU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mobile_logo"
+        android:layout_below="@id/welcomeTextU"/>
+
+    <TextView
+        android:id="@+id/titleExplanationU"
+        android:text="@string/ttile_Explaination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/imageViewLogoU"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/allura"
+        android:layout_marginTop="12dp"
+        android:textSize="19dp" />
+
+    <EditText
+        android:id="@+id/phoneNumberU"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleExplanationU"
+        android:layout_marginTop="19sp"
+        android:hint="@string/enter_phoneNumber"
+        android:textColorHint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="number"
+        android:padding="20dp"
+        android:importantForAutofill="no"
+        android:drawableLeft="@drawable/phone" />
+
+    <Button
+        android:id="@+id/sendOtpButton"
+        android:text="@string/send_otp"
+        android:layout_below="@id/phoneNumberU"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:textColor="#68228B"
+        android:textSize="14dp"
+        android:padding="12dp"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/deliveryText"
+        android:background="@drawable/button_bg"
+        android:layout_marginLeft="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/sendOtpButton"
+        android:layout_marginTop="24sp"
+        android:textSize="16sp"
+        android:padding="10sp"
+        android:text=" Fast Delivery"
+        android:drawableLeft="@drawable/deliver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/moneyText"
+        android:layout_below="@id/sendOtpButton"
+        android:layout_marginTop="24sp"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18sp"
+        android:textSize="16sp"
+        android:padding="10sp"
+        android:text=" Save Money"
+        android:drawableLeft="@drawable/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/qualityText"
+        android:background="@drawable/button_bg"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/moneyText"
+        android:layout_marginTop="14sp"
+        android:textSize="16sp"
+        android:padding="10sp"
+        android:text=" Quality Foods"
+        android:drawableLeft="@drawable/quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/solgan"
+        android:text="@string/solgan"
+        android:padding="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/allura"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

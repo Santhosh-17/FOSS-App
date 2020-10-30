@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddItem">
+
+    <TextView
+        android:id="@+id/addItemTitle"
+        android:padding="10dp"
+        android:text="@string/additem"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@drawable/business_bg1"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <EditText
+        android:id="@+id/NameET"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24sp"
+        android:hint="@string/itemName"
+        android:textColorHint="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:layout_above="@id/QuantityET"
+        android:background="@drawable/edit_text_bg2"
+        android:padding="20dp"
+        android:inputType="textCapWords"
+        android:importantForAutofill="no"/>
+    <EditText
+        android:id="@+id/QuantityET"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ItemQ"
+        android:textColorHint="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24sp"
+        android:layout_above="@id/priceET"
+        android:background="@drawable/edit_text_bg2"
+        android:inputType="number"
+        android:padding="20dp"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/priceET"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/price"
+        android:textColorHint="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:background="@drawable/edit_text_bg2"
+        android:inputType="number"
+        android:padding="20dp"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:id="@+id/saveItem"
+        android:layout_below="@id/priceET"
+        android:layout_toLeftOf="@id/cen2"
+        android:layout_marginTop="24sp"
+        android:text="@string/saveb"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingTop="8sp"
+        android:paddingBottom="8sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/buttonbw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/cen2" />
+
+    <TextView
+        android:id="@+id/cen2"
+        android:layout_below="@id/priceET"
+        android:layout_margin="24sp"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingTop="8sp"
+        android:paddingBottom="8sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_below="@id/priceET"
+        android:layout_toRightOf="@id/cen2"
+        android:layout_marginTop="24sp"
+        android:text="@string/cancel"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingTop="8sp"
+        android:paddingBottom="8sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/buttonbw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/cen2" />
+
+
+</RelativeLayout>

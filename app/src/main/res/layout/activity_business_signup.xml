@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/business_bg1"
+    android:layout_height="match_parent"
+    tools:context=".UI.BusinessSignup">
+
+    <TextView
+        android:id="@+id/createB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_your_account"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_margin="30dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/nameB"
+        android:layout_below="@id/createB"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:hint="@string/enterName"
+        android:textColorHint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="20dp"
+        android:autofillHints="" tools:targetApi="o"
+        android:drawableStart="@drawable/person" />
+
+    <EditText
+        android:id="@+id/mailB"
+        android:layout_below="@id/nameB"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enter_mail"
+        android:textColorHint="@android:color/white"
+        android:drawableLeft="@drawable/mail"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="20dp"
+        android:drawableStart="@drawable/mail"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/locationB"
+        android:layout_below="@id/mailB"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="@string/location"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/location"
+        android:textColorHint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textPostalAddress"
+        android:padding="20dp"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_below="@id/locationB"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:hint="@string/enter_password"
+        android:textColorHint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="20dp"
+        android:drawableStart="@drawable/lock"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/cpasswd"
+        android:layout_below="@id/passwd"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:hint="@string/confirm_password"
+        android:textColorHint="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_bg"
+        android:padding="20dp"
+        android:drawableStart="@drawable/lock"
+        android:importantForAutofill="no" />
+
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_below="@id/cpasswd"
+        android:layout_toLeftOf="@id/cen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/signup"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="24sp"
+        android:paddingLeft="18sp"
+        android:paddingRight="18sp"
+        android:paddingTop="9sp"
+        android:paddingBottom="9sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/button_bg"
+        />
+
+    <TextView
+        android:id="@+id/cen"
+        android:layout_below="@id/cpasswd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_below="@id/cpasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cen"
+        android:layout_gravity="center"
+        android:text="cancel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="24sp"
+        android:paddingLeft="18sp"
+        android:paddingRight="18sp"
+        android:paddingTop="9sp"
+        android:paddingBottom="9sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/button_bg"
+        />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbarB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "320210247770",
+    "firebase_url": "https://foss-5b822.firebaseio.com",
+    "project_id": "foss-5b822",
+    "storage_bucket": "foss-5b822.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320210247770:android:9f149751b598672d12f863",
+        "android_client_info": {
+          "package_name": "com.androidunleashed.foss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320210247770-udbmav3fu0a1fleeq4rk5g1cqqbrin32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidunleashed.foss",
+            "certificate_hash": "a76c74b225dbc8fea4e020c5fcbf75bdbd39f7d6"
+          }
+        },
+        {
+          "client_id": "320210247770-ma2f8oqhsto7iqj25cg362k3kvnc7520.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl1u1bAbgqefpibs6AX4ZF8OltWcOm1B8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320210247770-ma2f8oqhsto7iqj25cg362k3kvnc7520.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".PackUpdate.BusinessUpdate">
+
+    <TextView
+        android:id="@+id/ubusinessProfile1"
+        android:textStyle="bold"
+        android:text="UPDATE PROFILE"
+        android:textSize="18sp"
+        android:paddingTop="10sp"
+        android:paddingLeft="5sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/business_bg1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingStart="5sp" />
+
+    <TextView
+        android:id="@+id/uCompanyName"
+        android:layout_below="@id/ubusinessProfile1"
+        android:text="Company Name"
+        android:layout_marginTop="10sp"
+        android:paddingTop="14sp"
+        android:paddingLeft="14sp"
+        android:paddingRight="14sp"
+        android:textSize="19sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/uprofileName"
+        android:text="Company Owner Name"
+        android:paddingLeft="5sp"
+        android:paddingTop="8sp"
+        android:paddingBottom="8sp"
+        android:inputType="textCapWords"
+        android:paddingRight="5sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="6sp"
+        android:layout_marginLeft="14sp"
+        android:background="@drawable/edit_text_bg2"
+        android:layout_below="@id/uCompanyName"
+        android:textSize="18sp"
+        android:layout_marginBottom="8sp"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/uprofileImage"
+        android:src="@drawable/profilelogor"
+        android:layout_below="@id/ubusinessProfile1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10sp"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/todo"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/uprofileMAilB"
+        android:layout_below="@id/uprofileImage"
+        android:paddingLeft="14sp"
+        android:paddingTop="14sp"
+        android:paddingRight="14sp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="E-Mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/uprofileMAil1"
+        android:layout_below="@id/uprofileMAilB"
+        android:paddingLeft="28sp"
+        android:paddingTop="3sp"
+        android:paddingBottom="14sp"
+        android:paddingRight="14sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/uprofileLocation"
+        android:layout_below="@id/uprofileMAil1"
+        android:paddingLeft="14sp"
+        android:paddingRight="14sp"
+        android:paddingTop="14sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="Location "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/uprofileLocation1"
+        android:layout_below="@id/uprofileLocation"
+        android:paddingLeft="8sp"
+        android:inputType="textCapWords"
+        android:layout_marginTop="6sp"
+        android:layout_marginLeft="14sp"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/edit_text_bg2"
+        android:paddingTop="8sp"
+        android:paddingBottom="8sp"
+        android:paddingRight="8sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/updateButtonB"
+        android:layout_below="@id/uprofileLocation1"
+        android:layout_toLeftOf="@id/cen4"
+        android:text="Update"
+        android:textColor="@android:color/holo_green_dark"
+        android:background="@drawable/buttonbw"
+        android:textStyle="bold"
+        android:paddingRight="8sp"
+        android:layout_marginTop="28sp"
+        android:paddingLeft="8sp"
+        android:paddingTop="2sp"
+        android:paddingBottom="2sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/cen4"
+        android:layout_below="@id/uprofileLocation1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:id="@+id/cancelButtonUB"
+        android:layout_below="@id/uprofileLocation1"
+        android:layout_toRightOf="@id/cen4"
+        android:text="Cancel"
+        android:layout_marginTop="28sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/buttonbw"
+        android:textStyle="bold"
+        android:paddingRight="8sp"
+        android:paddingLeft="8sp"
+        android:paddingTop="2sp"
+        android:paddingBottom="2sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/cart"
+        android:title="My Orders"
+        android:icon="@drawable/orders"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/profilemm1"
+        android:title="Profile"
+        android:icon="@drawable/person"
+        app:showAsAction="ifRoom"/>
+
+</menu>

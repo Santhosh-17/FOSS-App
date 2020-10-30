@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".UserFiles.UserUpdate">
+
+    <TextView
+        android:id="@+id/userUProfile"
+        android:textStyle="bold"
+        android:text="PROFILE"
+        android:textSize="18sp"
+        android:paddingTop="10sp"
+        android:paddingLeft="5sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/loginbg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingStart="5sp" />
+
+    <TextView
+        android:id="@+id/userUProfileName"
+        android:text="Name"
+        android:layout_below="@id/userUProfile"
+        android:layout_marginTop="10sp"
+        android:paddingTop="14sp"
+        android:paddingLeft="14sp"
+        android:paddingRight="14sp"
+        android:textSize="19sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/userEnterUProfileName"
+        android:text="User Name"
+        android:padding="5sp"
+        android:layout_margin="14sp"
+        android:background="@drawable/edit_text_bg2"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/userUProfileName"
+        android:textSize="18sp"
+        android:layout_marginBottom="8sp"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/userUProfileImage"
+        android:src="@drawable/profilelogor"
+        android:layout_below="@id/userUProfile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10sp"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/todo"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/userUProfileMAil"
+        android:layout_below="@id/userUProfileImage"
+        android:paddingLeft="14sp"
+        android:paddingTop="14sp"
+        android:paddingRight="14sp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="E-Mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/userUProfileMAil1"
+        android:layout_below="@id/userUProfileMAil"
+        android:padding="5sp"
+        android:layout_margin="14sp"
+        android:background="@drawable/edit_text_bg2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/userUProfileLocation"
+        android:layout_below="@id/userUProfileMAil1"
+        android:paddingLeft="14sp"
+        android:paddingRight="14sp"
+        android:paddingTop="14sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="Location "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/userUProfileLocation1"
+        android:layout_below="@id/userUProfileLocation"
+        android:padding="5sp"
+        android:layout_margin="14sp"
+        android:background="@drawable/edit_text_bg2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/userUProfileNum"
+        android:layout_below="@id/userUProfileLocation1"
+        android:paddingLeft="14sp"
+        android:paddingRight="14sp"
+        android:paddingTop="14sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="Phone "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/userUProfileNum1"
+        android:layout_below="@id/userUProfileNum"
+        android:paddingLeft="28sp"
+        android:paddingTop="3sp"
+        android:paddingBottom="14sp"
+        android:paddingRight="14sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/userUProfileUpdate"
+        android:layout_below="@id/userUProfileNum1"
+        android:layout_toLeftOf="@id/cen5"
+        android:text="Update"
+        android:textColor="@android:color/holo_green_dark"
+        android:background="@drawable/buttonbw"
+        android:textStyle="bold"
+        android:paddingRight="8sp"
+        android:layout_marginTop="28sp"
+        android:paddingLeft="8sp"
+        android:paddingTop="2sp"
+        android:paddingBottom="2sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/cen5"
+        android:layout_below="@id/userUProfileNum1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:id="@+id/userUProfileCancel"
+        android:layout_below="@id/userUProfileNum1"
+        android:layout_toRightOf="@id/cen5"
+        android:text="Cancel"
+        android:layout_marginTop="28sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/buttonbw"
+        android:textStyle="bold"
+        android:paddingRight="8sp"
+        android:paddingLeft="8sp"
+        android:paddingTop="2sp"
+        android:paddingBottom="2sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
